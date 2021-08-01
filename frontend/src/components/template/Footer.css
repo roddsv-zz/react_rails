@@ -1,6 +1,14 @@
 footer.footer {
     display: flex;
+    background-color: #33C7FF;
+    background: #33C7FF;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 360px;
+}
+
+footer.footer-text {
+    display: flex-end;
+    background-color: #33C7FF;
+    background: #33C7FF;
+    justify-content: flex-end;
 }

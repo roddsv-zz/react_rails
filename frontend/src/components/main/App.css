@@ -34,11 +34,11 @@ header.header {
 }
 
 aside.menu-area {
-    grid-area: menu;
+    grid-area: top-menu;
 }
 
 main.content {
-    grid-area: content
+    grid-area: content;
 }
 
 footer.footer {
