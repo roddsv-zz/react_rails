@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default props =>
     <aside className="top-menu">
         <nav className="menu">
-            <Link to="/">Cadastrar Novo Usuário</Link><br/>
-            <Link to="/usuarios">Listar Usuários</Link>
+            <Link to="/">Listar Usuários</Link>
+            <Link to="/usuarios">Cadastrar Novo Usuário</Link><br/>
         </nav>
     </aside>
