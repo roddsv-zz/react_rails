@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  telefone: 1
+  ativo: false
+
+two:
+  telefone: 1
+  ativo: false
