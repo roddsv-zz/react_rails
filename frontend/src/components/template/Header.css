@@ -1,0 +1,13 @@
+header.header {
+    background-color: #33C7FF;
+    padding: 0px 15px;
+    overflow: hidden;
+}
+
+header.header h3 {
+    font-size: 1.4em;
+}
+
+header.header h6 {
+    font-size: 1.2em;
+}
