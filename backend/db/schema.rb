@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_01_002609) do
+ActiveRecord::Schema.define(version: 2021_08_01_004005) do
+
+  create_table "contatos", force: :cascade do |t|
+    t.integer "telefone"
+    t.boolean "ativo"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "usuarios", force: :cascade do |t|
     t.string "nome"
@@ -19,6 +26,9 @@ ActiveRecord::Schema.define(version: 2021_08_01_002609) do
     t.boolean "ativo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "contato_id", null: false
+    t.index ["contato_id"], name: "index_usuarios_on_contato_id"
   end
 
+  add_foreign_key "usuarios", "contatos"
 end
