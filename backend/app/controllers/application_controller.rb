@@ -16,6 +16,7 @@ end
 def cors_preflight_check
   if request.method == :options
     headers['Access-Control-Allow-Origin'] = 'http://localhost:3000'
+    render :text => '', :content_type => 'text/plain'
   end
 end
 
